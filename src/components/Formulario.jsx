@@ -35,7 +35,7 @@ const validarDatos = (e) => {
                     setMensaje("Error: Las password deben ser iguales");
                     return
                  }
-                    
+// verificar formato de email
                 else if (!regex.test(mail)) {
                 setAlerta("alert alert-danger");
                     setMensaje("Error: El e-mail ingresado no es valido");
@@ -45,7 +45,7 @@ else {
     setAlerta("alert alert-success");
     setMensaje("Los datos se Ingresaron correctamente");}
 
-    // Si el formulario se envía correctamente devolvemos todos nuestros estados al inicial y reseteamos el formulario
+// Si el formulario se envía correctamente devolvemos todos nuestros estados al inicial y reseteamos el formulario
     setNombre('');
     setMail('');
     setPass1('');
